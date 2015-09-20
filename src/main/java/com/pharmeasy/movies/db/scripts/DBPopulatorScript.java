@@ -26,7 +26,7 @@ import com.pharmeasy.movies.dto.Movie;
 
 public class DBPopulatorScript {
 
-	private static String dbhost = "52.4.243.202";
+	private static String dbhost = "localhost";
 	private static String dbname = "moviedb";
 
 	public static void main(String[] args) {
