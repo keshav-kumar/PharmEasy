@@ -10,7 +10,7 @@
 	<appender name="appFileAppender" class="org.apache.log4j.rolling.RollingFileAppender">
 		<param name="MaxBackupIndex" value="500" />
 		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
-			<param name="FileNamePattern" value="/mnt/logs/movie.log.%d{yyyy-MM-dd}" />
+			<param name="FileNamePattern" value="D:\logs\movie.log.%d{yyyy-MM-dd}" />
 		</rollingPolicy>
 		<layout class="org.apache.log4j.PatternLayout">
 			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ssz}[%c{1}]|%m%n" />

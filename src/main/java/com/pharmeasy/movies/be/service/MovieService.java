@@ -29,11 +29,11 @@ public class MovieService {
 		return new ArrayList<>();
 	}
 	
-	public List<Movie> getMoviesForTitle(String cityname) {
+	public List<Movie> getMoviesForTitle(String title) {
 		try{
-			cityname = cityname.trim();
-			List<Movie> allMoviesForCity = daoService.getMoviesForTitle(cityname);
-			return allMoviesForCity;
+			title = title.trim();
+			List<Movie> allMoviesForTitle = daoService.getMoviesForTitle(title);
+			return allMoviesForTitle;
 		}catch(Exception e){
 			logger.error(e.getMessage(), e);
 		}

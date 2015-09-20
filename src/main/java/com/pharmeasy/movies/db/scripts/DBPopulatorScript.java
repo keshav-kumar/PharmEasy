@@ -28,6 +28,7 @@ public class DBPopulatorScript {
 	private static String dbname = "moviedb";
 
 	public static void main(String[] args) {
+		loadLocation();
 		loadMovies();
 	}
 

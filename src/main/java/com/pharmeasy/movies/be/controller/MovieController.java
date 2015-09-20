@@ -40,7 +40,7 @@ public class MovieController {
 	 @RequestMapping(value="/title", method={RequestMethod.GET}, produces="application/json")
 	 public @ResponseBody JSONArray getMovieByTitle(@RequestParam String name){
 		 try{
-			  List<Movie> movies = movieService.getMovies(name);
+			  List<Movie> movies = movieService.getMoviesForTitle(name);
 			  JSONArray jsonArray = JSONUtils.convertListToJSON(movies);
 			  return jsonArray;
 		 }catch(Exception e){
