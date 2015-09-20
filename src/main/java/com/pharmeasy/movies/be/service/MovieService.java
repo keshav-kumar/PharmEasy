@@ -28,5 +28,16 @@ public class MovieService {
 		}
 		return new ArrayList<>();
 	}
+	
+	public List<Movie> getMoviesForTitle(String cityname) {
+		try{
+			cityname = cityname.trim();
+			List<Movie> allMoviesForCity = daoService.getMoviesForTitle(cityname);
+			return allMoviesForCity;
+		}catch(Exception e){
+			logger.error(e.getMessage(), e);
+		}
+		return new ArrayList<>();
+	}
 
 }

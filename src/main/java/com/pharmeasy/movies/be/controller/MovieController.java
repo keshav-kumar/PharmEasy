@@ -36,5 +36,17 @@ public class MovieController {
 		 }
 		 return null;
 	 }
+	 
+	 @RequestMapping(value="/title", method={RequestMethod.GET}, produces="application/json")
+	 public @ResponseBody JSONArray getMovieByTitle(@RequestParam String name){
+		 try{
+			  List<Movie> movies = movieService.getMovies(name);
+			  JSONArray jsonArray = JSONUtils.convertListToJSON(movies);
+			  return jsonArray;
+		 }catch(Exception e){
+			 logger.error(e.getMessage(), e);
+		 }
+		 return null;
+	 }
 	
 }
