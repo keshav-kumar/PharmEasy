@@ -3,7 +3,7 @@
 ==========================================
 
 1) JDK
-2) MongoDB 3.0.X
+2) MongoDB 3.0
 3) Maven
 4) Tomcat
 5) Git Repository
